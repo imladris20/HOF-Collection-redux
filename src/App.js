@@ -35,7 +35,7 @@ class App extends React.Component {
     }
     
     render(){
-        
+
         const filteredPlayers = this.state.players.filter( input => {
             return input.name.toLowerCase().includes(this.state.searchfield.toLowerCase());  
         })
@@ -43,7 +43,7 @@ class App extends React.Component {
 
         return (
             <div className="tc">
-                <h1>Your Hall-Of-Fame Collection</h1>
+                <h1 className="f1">Hall Of Fame Collection</h1>
                 {/* Searchbar 加上inputchange這個props之後，Searchbar.js就能夠取用 */}
                 <Searchbar inputchange={this.inputChange} />
                 <Cardlist players = {filteredPlayers} />

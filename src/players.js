@@ -3,72 +3,78 @@ export const players = [
     backnumber: 29,
     name: 'Chris Carpenter',
     team: 'St. Louis Cardinals',
-    position: 'SP'
+    position: 'Starting Pitcher'
   },
   {
     backnumber: 50,
     name: 'Adam Wainwright',
     team: 'St. Louis Cardinals',
-    position: 'SP'
+    position: 'Starting Pitcher'
   },
   {
     backnumber: 4,
     name: 'Yadier Molina',
     team: 'St. Louis Cardinals',
-    position: 'C'
+    position: 'Catcher'
   },
   {
     backnumber: 5,
     name: 'Albert Pujols',
     team: 'St. Louis Cardinals',
-    position: '1B'
+    position: 'First Baseman'
   },
   {
     backnumber: 40,
     name: 'Chien-Ming Wang',
     team: 'New York Yankees',
-    position: 'SP'
+    position: 'Starting Pitcher'
   },
   {
     backnumber: 16,
     name: 'Wei-Yin Chen',
     team: 'Baltimore Orioles',
-    position: 'SP'
+    position: 'Starting Pitcher'
   },
   {
     backnumber: 35,
     name: 'Nolan Arenado',
     team: 'St. Louis Cardinals',
-    position: '3B'
+    position: 'Third Baseman'
   },
   {
     backnumber: 1,
     name: 'Ozzie Smith',
     team: 'St. Louis Cardinals',
-    position: 'SS'
+    position: 'Short Stop'
   },
   {
     backnumber: 12,
     name: 'Roberto Alomar',
     team: 'Toronto Blue Jay',
-    position: '2B'
+    position: 'Second Baseman'
   },
   {
     backnumber: 6,
     name: 'Stan Musial',
     team: 'St. Louis Cardinals',
-    position: 'LF'
+    position: 'Left Fielder'
   },
   {
     backnumber: 24,
     name: 'Ken Griffey Jr.',
     team: 'Seattle Mariners',
-    position: 'CF'
+    position: 'Center Fielder'
   },
   {
     backnumber: 44,
     name: 'Hank Aaron',
     team: 'Atlanda Braves',
-    position: 'RF'
+    position: 'Right Fielder'
+  },
+  {
+    backnumber: 29,
+    name: 'Po-Lien LIN',
+    team: 'NCCU History',
+    position: 'Starting Pitcher'
   }
 ];

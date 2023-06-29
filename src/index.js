@@ -7,6 +7,7 @@ import './index.css';
 // import Cardlist from './Cardlist.js'
 
 import App from './App';
+import './App.css';
 import reportWebVitals from './reportWebVitals';
 import 'tachyons';
 

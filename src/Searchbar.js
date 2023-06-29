@@ -3,7 +3,7 @@ import React from "react";
 const Searchbar = (props) => {
     return (
         <div className="pa2">
-            <input  className='pa3 ba b--blue bg-light-red'
+            <input  className='pa3 ba b--blue bg-white-90'
                     type="search"
                     placeholder="insert player you want"
 
