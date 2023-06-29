@@ -18,7 +18,9 @@ import 'tachyons';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App /> 
+    <App />
+    <p className='tc'>Due to copyright issues regarding players, we have adopted to use resources from a <a className='white hover-light-red' href="https://robohash.org/" >cat image generator website</a> as an alternative.</p>
+    <h5 className='tc'>Copyright to <a className='white hover-light-red' href="https://github.com/imladris20" >Po-Lien Lin</a></h5>
   </React.StrictMode>
 );
 
