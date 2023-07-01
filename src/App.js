@@ -29,7 +29,6 @@ class App extends React.Component {
     }
 
     inputChange = (event) => {
-
         //  setState()是react的常用methods，在括號內你會執行對state的內容做什麼變更
         this.setState({searchfield: event.target.value})
     }
