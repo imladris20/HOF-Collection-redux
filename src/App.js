@@ -2,6 +2,7 @@ import React from "react";
 import Cardlist from "./Cardlist";
 import Searchbar from "./Searchbar";
 import {players} from "./players";
+import Scroll from "./Scroll";
 
 /*  以下7-15行內容等同於18-51行的基底內容 */
 // const App = () => {
@@ -13,7 +14,6 @@ import {players} from "./players";
 //         </div>
 //     );
 // }
-
 
 class App extends React.Component {
     
@@ -55,7 +55,9 @@ class App extends React.Component {
                 <h1 className="f1">Hall Of Fame Collection</h1>
                 {/* Searchbar 加上inputchange這個props之後，Searchbar.js就能夠取用 */}
                 <Searchbar inputchange={this.inputChange} />
-                <Cardlist players = {filteredPlayers} />
+                <Scroll>
+                    <Cardlist players = {filteredPlayers} />
+                </Scroll>            
             </div>
         );
     }
