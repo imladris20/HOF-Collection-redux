@@ -43,8 +43,10 @@ class App extends React.Component {
     
     render(){
 
-        const filteredPlayers = this.state.players.filter( input => {
-            return input.name.toLowerCase().includes(this.state.searchfield.toLowerCase());  
+        const {players, searchfield} = this.state;
+
+        const filteredPlayers = players.filter( input => {
+            return input.name.toLowerCase().includes(searchfield.toLowerCase());  
         })
         // console.log(filteredPlayers); --> 用來確認filter後是否沒問題，OK就可以把filteredPlayers反映到cardlist的props裡面
 
