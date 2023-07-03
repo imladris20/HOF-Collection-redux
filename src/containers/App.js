@@ -52,16 +52,20 @@ class App extends React.Component {
 
         console.log("Part render runs.");
 
-        return (
-            <div className="tc">
-                <h1 className="f1">Hall Of Fame Collection</h1>
-                {/* Searchbar 加上inputchange這個props之後，Searchbar.js就能夠取用 */}
-                <Searchbar inputchange={this.inputChange} />
-                <Scroll>
-                    <Cardlist players = {filteredPlayers} />
-                </Scroll>            
-            </div>
-        );
+        if (!players.length){
+            return <h1>Loading...</h1>
+        } else {
+            return (
+                <div className="tc">
+                    <h1 className="f1">Hall Of Fame Collection</h1>
+                    {/* Searchbar 加上inputchange這個props之後，Searchbar.js就能夠取用 */}
+                    <Searchbar inputchange={this.inputChange} />
+                    <Scroll>
+                        <Cardlist players = {filteredPlayers} />
+                    </Scroll>            
+                </div>
+            );
+        }
     }
 }
 
