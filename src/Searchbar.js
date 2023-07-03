@@ -7,8 +7,8 @@ const Searchbar = (props) => {
                     type="search"
                     placeholder="insert player you want"
 
-                    //  onChange³o­ÓHTML»yªk§Ñ°Oªº¸Ü½Ð¥h·j´M
-                    //  ·N«ä¬O¦pªGinput¤º®e¦³§ïÅÜ¡A´N°õ¦æ=«á­±ªºfunction
+                    //  onChangeé€™å€‹HTMLèªžæ³•å¿˜è¨˜çš„è©±è«‹åŽ»æœå°‹
+                    //  æ„æ€æ˜¯å¦‚æžœinputå…§å®¹æœ‰æ”¹è®Šï¼Œå°±åŸ·è¡Œ=å¾Œé¢çš„function
                     onChange={props.inputchange}        
             />
         </div>

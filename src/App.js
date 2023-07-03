@@ -4,7 +4,7 @@ import Searchbar from "./Searchbar";
 import {players} from "./players";
 import Scroll from "./Scroll";
 
-/*  ¥H¤U7-15¦æ¤º®eµ¥¦P©ó18-51¦æªº°ò©³¤º®e */
+/*  ä»¥ä¸‹7-15è¡Œå…§å®¹ç­‰åŒæ–¼18-51è¡Œçš„åŸºåº•å…§å®¹ */
 // const App = () => {
 //     return (
 //         <div className="tc">
@@ -17,13 +17,13 @@ import Scroll from "./Scroll";
 
 class App extends React.Component {
     
-    //  ¥H¤Uªºthis³£¬O«üclass APP ³o­Óscope
-    //  §Ñ°Oconstructor½Ğ¥h¬İµ§°Oªºindantation part
+    //  ä»¥ä¸‹çš„thiséƒ½æ˜¯æŒ‡class APP é€™å€‹scope
+    //  å¿˜è¨˜constructorè«‹å»çœ‹ç­†è¨˜çš„instantiation part
     constructor() {
-        //  ³z¹Lsuper()¡Aconstructor¤~¯à¨ú¥Îthis
+        //  é€ésuper()ï¼Œconstructoræ‰èƒ½å–ç”¨this
         super();
         this.state = {
-            //  ³q±`¤£·|§âªì©lstate³]©w¦³¤º®e
+            //  é€šå¸¸ä¸æœƒæŠŠåˆå§‹stateè¨­å®šæœ‰å…§å®¹
             players: [],
             searchfield: ''
         }
@@ -36,7 +36,7 @@ class App extends React.Component {
     }
 
     inputChange = (event) => {
-        //  setState()¬Oreactªº±`¥Îmethods¡A¦b¬A¸¹¤º§A·|°õ¦æ¹ïstateªº¤º®e°µ¤°»òÅÜ§ó
+        //  setState()æ˜¯reactçš„å¸¸ç”¨methodsï¼Œåœ¨æ‹¬è™Ÿå…§ä½ æœƒåŸ·è¡Œå°stateçš„å…§å®¹åšä»€éº¼è®Šæ›´
         this.setState({searchfield: event.target.value})
         console.log("Part inputChange runs.");
     }
@@ -46,14 +46,14 @@ class App extends React.Component {
         const filteredPlayers = this.state.players.filter( input => {
             return input.name.toLowerCase().includes(this.state.searchfield.toLowerCase());  
         })
-        // console.log(filteredPlayers); --> ¥Î¨Ó½T»{filter«á¬O§_¨S°İÃD¡AOK´N¥i¥H§âfilteredPlayers¤Ï¬M¨ìcardlistªºprops¸Ì­±
+        // console.log(filteredPlayers); --> ç”¨ä¾†ç¢ºèªfilterå¾Œæ˜¯å¦æ²’å•é¡Œï¼ŒOKå°±å¯ä»¥æŠŠfilteredPlayersåæ˜ åˆ°cardlistçš„propsè£¡é¢
 
         console.log("Part render runs.");
 
         return (
             <div className="tc">
                 <h1 className="f1">Hall Of Fame Collection</h1>
-                {/* Searchbar ¥[¤Winputchange³o­Óprops¤§«á¡ASearchbar.js´N¯à°÷¨ú¥Î */}
+                {/* Searchbar åŠ ä¸Šinputchangeé€™å€‹propsä¹‹å¾Œï¼ŒSearchbar.jså°±èƒ½å¤ å–ç”¨ */}
                 <Searchbar inputchange={this.inputChange} />
                 <Scroll>
                     <Cardlist players = {filteredPlayers} />

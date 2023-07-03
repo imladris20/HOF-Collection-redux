@@ -18,7 +18,7 @@ const Cardlist = ( {players} ) => {
 
 export default Cardlist;
 
-/* ³o¬O­ì¥ý©ñ¦b<div>¤ºªº¤@¾ã±Æcard¡A«Ü©úÅã¥H¤U¤@©w¥i¥H°µ¦¨loop¥hÂ²¤Æ */
+/* é€™æ˜¯åŽŸå…ˆæ”¾åœ¨<div>å…§çš„ä¸€æ•´æŽ’cardï¼Œå¾ˆæ˜Žé¡¯ä»¥ä¸‹ä¸€å®šå¯ä»¥åšæˆloopåŽ»ç°¡åŒ– */
     /* <Card backnumber = {players[0].backnumber} name = {players[0].name} team = {players[0].team} position = {players[0].position} />
     <Card backnumber = {players[1].backnumber} name = {players[1].name} team = {players[1].team} position = {players[1].position} />
     <Card backnumber = {players[2].backnumber} name = {players[2].name} team = {players[2].team} position = {players[2].position} />

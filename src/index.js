@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 
-//  §âCard·í¦¨¬OCardlistªº¤lcomponent«á¡A´N¤£»İ­nimport¡A¦P²z¡ACardlist¤]³Q©ñ¤JApp§@¬°¥Lªº¤lcomponent
+//  æŠŠCardç•¶æˆæ˜¯Cardlistçš„å­componentå¾Œï¼Œå°±ä¸éœ€è¦importï¼ŒåŒç†ï¼ŒCardlistä¹Ÿè¢«æ”¾å…¥Appä½œç‚ºä»–çš„å­component
 // import Card from './Card.js'
 // import Cardlist from './Cardlist.js'
 
@@ -11,8 +11,8 @@ import './App.css';
 import reportWebVitals from './reportWebVitals';
 import 'tachyons';
 
-//  ¥Î { } ¥Nªí­n¥hdestructure ¸ê®Æ¡A³o¬OES6ªº»yªk
-//  ¦]¬°CardlistÅÜ¦¨Appªº¤lcomponent¡A¨Ï±oCardlistªºprops¤]­n§ï¦¨import¶i¥hApp¡A¦Ó¤£»İ­nimport¨ìindex.js
+//  ç”¨ { } ä»£è¡¨è¦å»destructure è³‡æ–™ï¼Œé€™æ˜¯ES6çš„èªæ³•
+//  å› ç‚ºCardlistè®ŠæˆAppçš„å­componentï¼Œä½¿å¾—Cardlistçš„propsä¹Ÿè¦æ”¹æˆimporté€²å»Appï¼Œè€Œä¸éœ€è¦importåˆ°index.js
 // import {players} from './players.js';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
