@@ -3,6 +3,7 @@ import Cardlist from "../components/Cardlist";
 import Searchbar from "../components/Searchbar";
 import {players} from "../components/players";
 import Scroll from "../components/Scroll";
+import Errorboundry from "../components/Errorboundry";
 
 /*  以下7-15行內容等同於18-51行的基底內容 */
 // const App = () => {
@@ -61,7 +62,9 @@ class App extends React.Component {
                     {/* Searchbar 加上inputchange這個props之後，Searchbar.js就能夠取用 */}
                     <Searchbar inputchange={this.inputChange} />
                     <Scroll>
-                        <Cardlist players = {filteredPlayers} />
+                        <Errorboundry>
+                            <Cardlist players = {filteredPlayers} />
+                        </Errorboundry>
                     </Scroll>            
                 </div>
             );
