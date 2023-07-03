@@ -1,8 +1,8 @@
 import React from "react";
-import Cardlist from "./Cardlist";
-import Searchbar from "./Searchbar";
-import {players} from "./players";
-import Scroll from "./Scroll";
+import Cardlist from "../components/Cardlist";
+import Searchbar from "../components/Searchbar";
+import {players} from "../components/players";
+import Scroll from "../components/Scroll";
 
 /*  以下7-15行內容等同於18-51行的基底內容 */
 // const App = () => {
