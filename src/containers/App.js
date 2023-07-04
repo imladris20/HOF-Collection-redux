@@ -1,9 +1,10 @@
 import React from "react";
 import Cardlist from "../components/Cardlist";
 import Searchbar from "../components/Searchbar";
-import {players} from "../components/players";
+import {players} from "../players";
 import Scroll from "../components/Scroll";
 import Errorboundry from "../components/Errorboundry";
+import './App.css';
 
 /*  以下7-15行內容等同於18-51行的基底內容 */
 // const App = () => {
