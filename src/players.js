@@ -1,4 +1,4 @@
-export const players = [
+export const defaultPlayers = [
   {
     backnumber: 29,
     name: 'Chris Carpenter',
