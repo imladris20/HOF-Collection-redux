@@ -35,13 +35,17 @@ function App() {
 
     const [players, setPlayers] = useState([]);
     const [searchfield, setSearchfield] = useState('');
+    const [counter, setCounter] = useState(0);
 
    /*  componentDidMount(){
         this.setState( { players: players } );
         console.log("Part componentDidMount runs.");
     } */
 
-    useEffect(()=>setPlayers(defaultPlayers),[]);
+    useEffect(()=>{
+        setPlayers(defaultPlayers);
+        console.log(counter);
+    },[counter]);
 
     const inputChange = (event) => {
         //  setState()是react的常用methods，在括號內你會執行對state的內容做什麼變更
@@ -71,7 +75,8 @@ function App() {
                     <Errorboundry>
                         <Cardlist players = {filteredPlayers} />
                     </Errorboundry>
-                </Scroll>            
+                </Scroll>
+                <button onClick={()=>setCounter(counter+1)}>Practicing useState hook. If you click this, you should see the console adding counter</button>            
             </div>
         );
     }
