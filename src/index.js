@@ -12,14 +12,15 @@ import reportWebVitals from './reportWebVitals';
 import 'tachyons';
 
 import { Provider } from 'react-redux';
-import { createStore } from 'redux';
-import { searchRobots } from './reducers';
+import { legacy_createStore as createStore } from 'redux'
+// import { createStore } from 'redux';
+import { searchPlayers } from './reducers';
 
 //  用 { } 代表要去destructure 資料，這是ES6的語法
 //  因為Cardlist變成App的子component，使得Cardlist的props也要改成import進去App，而不需要import到index.js
 // import {players} from './players.js';
 
-const store = createStore(searchRobots);
+const store = createStore(searchPlayers);
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
