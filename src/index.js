@@ -1,35 +1,35 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';
 
-//  把Card當成是Cardlist的子component後，就不需要import，同理，Cardlist也被放入App作為他的子component
-// import Card from './Card.js'
-// import Cardlist from './Cardlist.js'
+import { legacy_createStore as createStore } from 'redux'
+import { applyMiddleware, combineReducers } from 'redux';
+
+import { Provider } from 'react-redux';
+import thunkMiddleware from 'redux-thunk';
+import { createLogger} from 'redux-logger';
 
 import App from './containers/App.js';
 import './containers/App.css';
 import reportWebVitals from './reportWebVitals';
+import { searchPlayers, requestPlayers } from './reducers';
+
 import 'tachyons';
+import './index.css';
 
-import { Provider } from 'react-redux';
-import { legacy_createStore as createStore } from 'redux'
-// import { createStore } from 'redux';
-import { searchPlayers } from './reducers';
+const logger = createLogger();
 
-//  用 { } 代表要去destructure 資料，這是ES6的語法
-//  因為Cardlist變成App的子component，使得Cardlist的props也要改成import進去App，而不需要import到index.js
-// import {players} from './players.js';
+const rootReducer = combineReducers({searchPlayers, requestPlayers});
 
-const store = createStore(searchPlayers);
+const store = createStore(rootReducer, applyMiddleware(thunkMiddleware, logger));
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <Provider store={store}>
       <App/>
+      <p className='tc'>Due to copyright issues regarding players, we have adopted to use resources from a <a className='white hover-light-red' href="https://robohash.org/" >cat image generator website</a> as an alternative.</p>
+      <h5 className='tc'>Copyright to <a className='white hover-light-red' href="https://github.com/imladris20" >Po-Lien Lin</a></h5>
     </Provider>
-    <p className='tc'>Due to copyright issues regarding players, we have adopted to use resources from a <a className='white hover-light-red' href="https://robohash.org/" >cat image generator website</a> as an alternative.</p>
-    <h5 className='tc'>Copyright to <a className='white hover-light-red' href="https://github.com/imladris20" >Po-Lien Lin</a></h5>
   </React.StrictMode>
 );
 

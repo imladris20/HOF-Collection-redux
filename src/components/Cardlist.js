@@ -5,7 +5,15 @@ const Cardlist = ( {players} ) => {
 
     const playerArray = players.map((element, index) => {
         //  key attributes are import. They must be unique and be added to every tag.
-        return <Card key={players[index].backnumber + players[index].name} backnumber = {players[index].backnumber} name = {players[index].name} team = {players[index].team} position = {players[index].position} />
+        return (
+            <Card
+                key={index}
+                backnumber = {players[index].id}
+                name = {players[index].name}
+                team = {players[index].company.name}
+                position = {players[index].company.bs} 
+            />
+        );
     })
     
     return (
